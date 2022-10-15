@@ -15,7 +15,8 @@ spec:
     spec:
       containers: # List
         - name: myapp1-container
-          image: stacksimplify/kubenginx:1.0.0
+          # image: shamjeed/kubenginx:1.0.0
+          image: shamjeed/mynginx_image1:v1-release
           ports:
             - containerPort: 80
 
