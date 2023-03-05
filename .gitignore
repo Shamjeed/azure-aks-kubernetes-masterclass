@@ -13,3 +13,4 @@
 *.tfstate
 *.tfstate.backup
 *.tfvars
+.vscode/launch.json

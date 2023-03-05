@@ -35,6 +35,16 @@ kubectl get pods --all-namespaces
 # For more commands Please check C:\Users\shamj\IdeaProjects\azure-aks-kubernetes-masterclass\01-Create-AKS-Cluster\README.md
 
 kubectl apply -f kube-manifests/
+#Output:
+# NAME                                 READY   STATUS    RESTARTS   AGE
+# myapp1-deployment-578cd77577-dmhwb   1/1     Running   0          29s
+# myapp1-deployment-578cd77577-nlxr7   1/1     Running   0          29s
+
+#To get logs from running pods (for Ngnix atleast 1 request has to be made)
+kubectl logs -f myapp1-deployment-578cd77577-dmhwb
+
+#To get the events occured inside the pod
+kubectl describe pod myapp1-deployment-578cd77577-dmhwb
 
 # Verify Pods
 kubectl get pods
